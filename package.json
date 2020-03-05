@@ -1,0 +1,25 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitroiano/node-rest-shop.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Vinicius Trainotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitroiano/node-rest-shop/issues"
+  },
+  "homepage": "https://github.com/vitroiano/node-rest-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
