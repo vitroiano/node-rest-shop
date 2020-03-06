@@ -1,2 +1,2 @@
-# rest-api
-rest api node js
+# node-rest-shop
+Creating a REST API with Node.js
