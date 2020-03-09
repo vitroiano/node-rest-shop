@@ -9,7 +9,7 @@ const ordersRoutes = require('./api/routes/orders');
 
 // problem conexao
 mongoose.connect(
-    "mongodb+srv://node-shop:nodeshop@cluster0-vfvxp.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb+srv://node-shop:" + process.env.MONGO_ATLAS_PW + "@cluster0-vfvxp.mongodb.net/test?retryWrites=true&w=majority",
     { 
         //useMongoClient: true,
         useNewUrlParser: true,
