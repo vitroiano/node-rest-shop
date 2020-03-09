@@ -2,9 +2,24 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const ordersRoutes = require('./api/routes/orders');
+
+// problem conexao
+mongoose.connect(
+    "mongodb+srv://node-shop:nodeshop@cluster0-vfvxp.mongodb.net/test?retryWrites=true&w=majority",
+    { 
+        //useMongoClient: true,
+        useNewUrlParser: true,
+        useUnifiedTopology: true 
+    }, function(error){console.log(error)}
+);
+
+mongoose.connection.on('connected', () => {
+    console.log('Mongoose is connected!!');
+})
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended : false}));
