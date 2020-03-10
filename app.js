@@ -33,6 +33,8 @@ mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected!!');
 })
 
+mongoose.Promise = global.Promise;
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
