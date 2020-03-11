@@ -19,7 +19,7 @@ const ordersRoutes = require('./api/routes/orders');
 
 // conexao MongoDB local
 mongoose.connect(
-    "mongodb://mongoadmin:" + process.env.MONGO_ATLAS_PW + "@172.17.0.4:27017/ecommerce?authSource=admin",
+    "mongodb://mongoadmin:" + process.env.MONGO_ATLAS_PW + "@172.17.0.3:27017/ecommerce?authSource=admin",
     { 
         //useMongoClient: true,
         useNewUrlParser: true,
