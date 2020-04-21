@@ -8,16 +8,6 @@ const productRoutes = require('./api/routes/products');
 const ordersRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
 
-// conexao MongoDB Atlas
-// mongoose.connect(
-//     "mongodb+srv://node-shop:" + process.env.MONGO_ATLAS_PW + "@cluster0-vfvxp.mongodb.net/test?retryWrites=true&w=majority",
-//     { 
-//         //useMongoClient: true,
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true 
-//     }, function(error){console.log(error)}
-// );
-
 // conexao MongoDB local
 mongoose.connect(
     "mongodb://mongoadmin:" + process.env.MONGO_ATLAS_PW + "@172.17.0.3:27017/ecommerce?authSource=admin",
